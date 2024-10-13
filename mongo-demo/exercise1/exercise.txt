@@ -1,0 +1,9 @@
+mongoimport --db mongo-exercises --collection courses --drop --file exercise-data.json --jsonArray
+
+
+שלבים לביצוע המשימה 
+1. לטעון mongoose
+2. mongoose.connect('mongodb://localhost/playground')
+3. mongoose.Schema
+4. mongoose.model
+5. getCourses -> await Course -> find skip limit sort count select 
