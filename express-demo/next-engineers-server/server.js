@@ -6,6 +6,7 @@ const cors = require('cors');
 //==============================
 
 const users = require('./users')
+const forms = require('./forms')
 const express = require('express')
 const mongoose = require('mongoose');
 const app = express()
@@ -30,6 +31,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'))
 app.use('/api/users', users)
+app.use('/api/forms', forms)
 // app.use('/', homepage)
 
 
